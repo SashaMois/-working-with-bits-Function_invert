@@ -8,13 +8,6 @@
 
 int invert(x, p, n);
 
-int main()
-{
-    printf("%d\n", invert(15, 2, 4));
-
-    return 0;
-}
-
 int invert(x, p, n)
 {
     x = x ^ ~(~0 << n) << p;
